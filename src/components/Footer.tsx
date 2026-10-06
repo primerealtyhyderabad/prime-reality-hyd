@@ -210,9 +210,14 @@ export const Footer: React.FC = () => {
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
           <p>© {new Date().getFullYear()} Prime Realty Hyderabad. All Rights Reserved.</p>
-          <p className="text-slate-400 italic font-script text-base">
-            "{BRAND.tagline}"
-          </p>
+          <div className="flex flex-col sm:flex-row items-center gap-4">
+            <Link to="/privacy-policy" className="hover:text-brand-orange-400 transition-colors">
+              Privacy Policy
+            </Link>
+            <p className="text-slate-400 italic font-script text-base">
+              "{BRAND.tagline}"
+            </p>
+          </div>
         </div>
       </div>
     </footer>
